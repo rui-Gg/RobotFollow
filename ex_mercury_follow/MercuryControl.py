@@ -8,7 +8,11 @@ obj = Exoskeleton(port="/dev/ttyACM2")  #根据实际串口修改
 ml = Mercury("/dev/left_arm")
 mr = Mercury("/dev/right_arm")
 
-
+if(ml.is_power_on() != True):
+    ml.power_on()
+if(mr.is_power_on() != True):
+    mr.power_on()
+    
 # 设置双臂为速度融合模式
 ml.set_movement_type(3)
 mr.set_movement_type(3)

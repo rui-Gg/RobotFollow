@@ -1,4 +1,4 @@
-# 外骨骼&MercuryB1联动说明
+# 外骨骼&MercuryX1\B1联动说明
 
 ## 控制效果
 <img src="../resource\exoskeleton.gif">
@@ -19,7 +19,7 @@
 
 <video controls src="../resource/MercuryA1固件烧录方法.mp4" title=""></video>
 
-*B1机器需找到根目录下的b1_flash文档，分别修改left_flash.py及right_flash.py中的文件名，直接运行sudo python left_flash.py 以及 sudo python right_flash.py即可*
+*X1\B1机器需找到根目录下的b1_flash文档，分别修改left_flash.py及right_flash.py中的文件名，直接运行sudo python left_flash.py 以及 sudo python right_flash.py即可*
 
 #### 后续我们会将该固件更新至官网的mystudio中，目前需要手动更新
 
@@ -29,7 +29,14 @@ exoskeleton_api.py 外骨骼控制库
 
 MercuryControl.py 手臂跟随主程序
 
+power_reset.py 双臂使能
+
 **完成使用前准备后，运行MercuryControl.py脚本即可**
+
+## 异常处理
+
+**由于双臂有严格的上下电顺序，当出现机械臂无法使能时，可尝试执行power_reset.py控制机械臂使能**
+
 
 ## MercuryControl.py脚本说明
 
