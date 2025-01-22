@@ -2,7 +2,7 @@ import threading
 import time
 from pynput.mouse import Controller
 from pymycobot import *
-m = Mercury("/dev/ttyAMA0")
+m = Mercury("/dev/ttyAMA1")
 if(m.is_power_on() != True):
     m.power_on()
 
@@ -33,9 +33,9 @@ def capture_mouse_position():
         offset_position = (current_position[0] - initial_position[0], current_position[1] - initial_position[1])
         target[0] = angles[0] - offset_position[0] * 0.05
         target[3] = angles[3] - offset_position[1] * 0.05
-        # print(1000*(time.time()-st))
+        print(1000*(time.time()-st))
         st = time.time()
-        m.send_angles(target, 3, _async=True)
+        m.send_angles(target, 10, _async=True)  #安全起见初始速度较慢，最快不要小于3
         print(f'Relative mouse position: {target}')
         # 等待10毫秒
         time.sleep(0.01)

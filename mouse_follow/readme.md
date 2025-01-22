@@ -7,8 +7,8 @@
 
 #### 更新pymycobot固件(version=b66及之后的版本)
 
+	pip install pynput	#安装鼠标库
 	pip install pymycobot==3.5.0b66
-
 	pip show pymycobot
 
 
@@ -31,9 +31,9 @@
 
 ## mouse.py脚本说明
 
-**首先需要修改为Mercury对应串口，一般为/dev/ttyAMA0**
+**首先需要修改为Mercury对应串口，一般为/dev/ttyAMA1**
 
-	m = Mercury("/dev/ttyAMA0") #根据串口号修改
+	m = Mercury("/dev/ttyAMA1") #根据串口号修改
 
 切换为速度融合模式
 

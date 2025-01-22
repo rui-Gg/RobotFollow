@@ -2,7 +2,7 @@ import threading
 import time
 from pynput.mouse import Controller
 from pymycobot import *
-m = Mercury("/dev/ttyAMA0") #根据串口号修改
+m = Mercury("/dev/ttyAMA1") #根据串口号修改
 if(m.is_power_on() != True):
     m.power_on()
 
@@ -36,7 +36,7 @@ def capture_mouse_position():
         target[1] = coord[1] - offset_position[0] * 0.15
         print(1000*(time.time()-st))
         st = time.time()
-        m.send_coords(target, 3, _async=True)
+        m.send_coords(target, 10, _async=True)  #安全起见初始速度较慢，最快不要小于3
         # 等待10毫秒
         time.sleep(0.01)
         # 参数说明：
@@ -44,7 +44,7 @@ def capture_mouse_position():
         # 	TI：速度等级，TI越小速度越快，建议>=3
         # 	_async=True：开环接口，指令不等待
         # 	time.sleep(0.01)：发送频率不要超过100hz（10ms）
-        # print(f'Relative mouse position: {offset_position}')
+        print(f'Relative mouse position: {offset_position}')
         
 
 # 创建一个线程以10ms的周期捕捉鼠标坐标

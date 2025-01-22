@@ -19,7 +19,7 @@
 
 <video controls src="../resource/MercuryA1固件烧录方法.mp4" title=""></video>
 
-*B1机器需找到根目录下的b1_flash文档，分别修改left_flash.py及right_flash.py中的文件名*
+*B1机器需找到根目录下的b1_flash文档，分别修改left_flash.py及right_flash.py中的文件名，直接运行sudo python left_flash.py 以及 sudo python right_flash.py即可*
 
 #### 后续我们会将该固件更新至官网的mystudio中，目前需要手动更新
 
