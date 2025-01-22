@@ -5,16 +5,16 @@
 
 ### 1.1 鼠标跟踪
 
-![alt text](resource\mouse.gif)
+<img src="resource\mouse.gif">
 
 ### 1.2 外骨骼控制
 
-![alt text](resource\exoskeleton.gif)
+<img src="resource\exoskeleton.gif">
 
 
 ### 1.3 VR控制
 
-![alt text](resource\VR.gif)
+<img src="resource\VR.gif">
 
 ## 2.速度规划
 

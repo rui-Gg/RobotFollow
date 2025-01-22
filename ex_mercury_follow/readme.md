@@ -1,7 +1,7 @@
 # 外骨骼&MercuryB1联动说明
 
 ## 控制效果
-![alt text](../resource\exoskeleton.gif)
+<img src="../resource\exoskeleton.gif">
 
 ## 使用前的准备
 

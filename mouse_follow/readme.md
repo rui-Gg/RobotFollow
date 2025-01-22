@@ -1,7 +1,7 @@
 # 鼠标&MercuryA1联动说明
 
 ## 控制效果
-![alt text](../resource\mouse.gif)
+<img src="../resource\mouse.gif">
 
 ## 使用前的准备
 
