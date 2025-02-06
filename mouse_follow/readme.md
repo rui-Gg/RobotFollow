@@ -5,16 +5,16 @@
 
 ## 使用前的准备
 
-#### 更新pymycobot固件(version=b66及之后的版本)
+#### 更新pymycobot固件(version=b67及之后的版本)
 
 	pip install pynput	#安装鼠标库
-	pip install pymycobot==3.5.0b66
+	pip install pymycobot==3.5.0b67
 	pip show pymycobot
 
 
-#### 更新Mercury固件(get_modified_version=37及之后的版本)
+#### 更新Mercury固件(get_modified_version=38及之后的版本)
 
-	Mercury_firmware\MercuryA1_0122_v37.bin
+	Mercury_firmware\MercuryA1_0210_v38.bin
 
 #### 固件烧录方法如下：
 
@@ -24,8 +24,13 @@
 
 ## 文件说明
 
-	mouse.py 坐标跟随
-	mouse_joint.py 角度跟随
+	FUSION
+	mouse.py 坐标速度跟随
+	mouse_joint.py 关节速度跟随
+
+	CP
+	mouse_cp.py 坐标位置跟随
+	mouse_joint_cp.py 关节位置跟随
 
 **完成使用前准备后，直接运行mouse.py脚本即可**
 
