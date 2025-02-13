@@ -67,14 +67,16 @@ FUSION模式不是一个通用的控制模式，它是为了适配VR遥操作、
 
 使用以下接口可切换至FUSION模式
 
-基于**位置环**的融合规划,适用于用户**自行规划速度曲线**的应用场景，**一般不建议用户使用！**
+基于**位置环**的融合规划,适用于对位置精度要求高的场景，**适用于VR控制**
 
     set_movement_type(2) #pos
 
 
-基于**速度环**的融合规划，适用于对位置精度要求低的的应用场景，**适用于VR控制、外骨骼联动等应用场景！**
+基于**速度环**的融合规划，适用于对位置精度要求低的的应用场景，**适用于外骨骼联动等应用场景！**
 
     set_movement_type(3) #speed
+
+**注意，在速度环模式下，机器会跟随采样点位的差分速度而不是实际位置！**
 
 开启融合模式后，使用以下接口开始速度融合控制
 
@@ -98,14 +100,26 @@ FUSION模式不是一个通用的控制模式，它是为了适配VR遥操作、
     mouse_joint.py  角度跟随
 
 *在上述脚本中，我用鼠标作为采样器模拟了MercuryA1跟随的应用场景，用户移动鼠标采集位置信息，通过调用速度融合接口即可实现机械臂的跟随效果*
-![alt text](resource\mouse.gif)
+<img src="resource\mouse.gif">
+
+---
+
+
+#### 我在mouse_follow\X1文件夹中存放了MercuryX1的坐标跟随案例
+    mouse.py    双臂坐标跟随
+
+<img src="resource\X1.gif">
+
+*用户可基于此框架进行VR坐标控制的功能开发*
+
+---
 
 #### 在ex_mercury_follow文件夹中存放了外骨骼控制MercuryX1、B1的案例代码和说明
     MercuryControl.py 外骨骼跟随主程序
     exoskeleton_api.py 外骨骼控制库
 
 *在上述脚本中，外骨骼作为采样器，用户通过转动外骨骼关节采集关节信息，通过调用速度融合接口即可实现机械臂的跟随效果*
-![alt text](resource\exoskeleton.gif)
+<img src="resource\exoskeleton.gif">
 
 
 ## 4.速度融合接口使用的常见问题

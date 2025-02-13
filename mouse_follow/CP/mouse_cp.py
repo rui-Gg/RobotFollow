@@ -38,8 +38,8 @@ def capture_mouse_position():
         st = time.time()
         speed = 100
         m.send_coords(target, speed, _async=True)
-        # 等待10毫秒
-        time.sleep(0.01)
+        # 等待50毫秒
+        time.sleep(0.05)
         # 参数说明：
         # 	target：目标位置（1*6坐标）
         # 	speed：速度

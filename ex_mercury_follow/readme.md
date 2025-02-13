@@ -12,14 +12,12 @@
 
 #### 更新Mercury固件(get_modified_version=12及之后的版本)
 
-	Mercury_firmware\MercuryX1_Left0120_v12.bin
-	Mercury_firmware\MercuryX1_Right0120_v12.bin
+	Mercury_firmware\MercuryX1_left_v1.0.13_20250212.bin
+	Mercury_firmware\MercuryX1_right_v1.0.13_20250212.bin
 
 #### 固件烧录方法如下：
 
-<video controls src="../resource/MercuryA1固件烧录方法.mp4" title=""></video>
-
-*X1\B1机器需找到根目录下的b1_flash文档，分别修改left_flash.py及right_flash.py中的文件名，直接运行sudo python left_flash.py 以及 sudo python right_flash.py即可*
+<video controls src="../resource/MercuryX1固件烧录方法.mp4" title=""></video>
 
 #### 后续我们会将该固件更新至官网的mystudio中，目前需要手动更新
 
