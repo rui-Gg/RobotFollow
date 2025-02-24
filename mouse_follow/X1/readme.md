@@ -1,7 +1,14 @@
 # 鼠标&MercuryX1联动说明
 
 ## 控制效果
+
+**位置环**
+
 <img src="../../resource\X1.gif">
+
+**速度环**
+
+<img src="../../resource\Basespeed.gif">
 
 ## 使用前的准备
 
@@ -15,14 +22,18 @@
 
 #### 更新MercuryX1固件
 
-	Mercury_firmware\MercuryX1_left_v1.0.13_20250212.bin
-	Mercury_firmware\MercuryX1_right_v1.0.13_20250212.bin
+	Mercury_firmware\MercuryX1_left_v1.1.0_20250224.bin
+	Mercury_firmware\MercuryX1_right_v1.1.0_20250224.bin
 
 #### 固件烧录方法如下：
 
 <video controls src="../../resource/MercuryX1固件烧录方法.mp4" title=""></video>
 
 #### 后续我们会将该固件更新至官网的mystudio中，目前需要手动更新
+
+	mouse.py 位置环控制
+
+	speed.py 速度环控制
 
 ## mouse.py脚本说明
 
